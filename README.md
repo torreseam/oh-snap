@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npx create-react-app photo-port`
+### `npm install @testing-library/react @testing-library/jest-dom --save-dev`
 ### `npm start`
 
 Runs the app in the development mode.<br />
