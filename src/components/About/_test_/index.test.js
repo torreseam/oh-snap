@@ -14,18 +14,14 @@ afterEach(cleanup);
 
 //describe function to declare testing component
 describe('About component', () => {
-    //rendeds About the test
-    //first test
+    // First test is baseline to verify the component is rendering
     it('renders', () => {
-        render(<About />);
-    });
-
-    //Second Test
-    it('matches snapchot DOM node structure', () => {
-        //render About 
+        render(<About />)
+    })
+    // Second test known as a "test case" will compare snapshot versions of the DOM node structure aka a serialized version of the DOM node structure, enabled by Jest
+    it('matches snapshot DOM node structure', () => {
+        // use asFragment function to return snapshot of Amount component
         const { asFragment } = render(<About />);
-
-        //test whether the expected & actual outcome match
         expect(asFragment()).toMatchSnapshot();
     })
 })
